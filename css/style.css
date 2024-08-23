@@ -28,6 +28,11 @@ a {
 /* Header */
 
 .header {
+    border-bottom: 1px solid #DEDEDE;
+}
+
+
+.header-wrapper {
     display: flex;
     align-items: center;
     gap: 196px;
@@ -48,12 +53,12 @@ a {
 .nav {
     flex-grow: 1;
     display: flex;
-    gap: 46px;
+    gap: 47px;
 }
 
 .nav-link {
     color: var(--dark);
-    font-style: 20px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -153,6 +158,8 @@ a {
     font-size: 79px;
     font-weight: 700;
     text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .hero-description {
@@ -162,4 +169,75 @@ a {
     font-size: 15px;
     line-height: 160%;
     /* Записывать лучше в процентах */
+}
+
+/* Banner */
+
+.banner {
+    margin-top: 140px;
+}
+
+.banner-wrapper {
+    background-image: url(../img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+
+.banner-title {
+    color: var(--light);
+    font-family: var(--nunito-sans);
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 126%;
+    text-transform: uppercase;
+    margin-top: 0;
+    /* сброс параметра, так как есть уже отступ в 100px и будет лишним */
+    margin-bottom: 11px;
+}
+
+.banner-title span {
+    display: block;
+    max-width: 95px;
+    color: var(--light);
+    font-family: var(--open-sans);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 128%;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--accent-dark);
+    border-radius: 14px;
+    padding: 5px 0px;
+    margin-bottom: 4px;
+}
+
+.banner-description {
+    max-width: 328px;
+    margin-top: 0;
+    /* сброс параметра, так как тэг <p> всегда имеет отступ сверху, а от загаловка уже выставлен отступ*/
+    margin-bottom: 13px;
+    color: rgba(var(--light-rgb), .8);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.banner-btn {
+    font-size: 14px;
+    font-family: var(--nunito-sans);
+    font-weight: 700;
+    padding: 22px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1E2F40;
+    background-color: var(--accent-light);
+    border: none;
+    /* в кнопках обязательно указывать */
+    border-radius: 5px;
+}
+
+.banner-btn:hover {
+    background-color: var(--accent-dark);
 }
