@@ -44,6 +44,17 @@ a {
     padding-bottom: 26px;
 }
 
+.burger-menu {
+    display: none;
+    width: 34px;
+    height: 22px;
+    background-image: url(../img/Menu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+}
+
 
 .logo {
     display: block;
@@ -705,5 +716,94 @@ a {
         text-align: left;
     }
 
+
+}
+
+@media(max-width: 730px) {
+    .header-wrapper {
+        gap: 21px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav._modal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .logo {
+        width: 116px;
+        height: 37px;
+        flex-grow: 1;
+    }
+
+    .modal {
+        width: 100%;
+        max-width: 500px;
+        background-color: #fff8dc;
+        padding: 40px 15px;
+        position: absolute;
+        top: 0;
+        box-sizing: border-box;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        transition: var(--tr);
+    }
+
+    .modal-close {
+        display: block;
+        width: 22px;
+        height: 22px;
+        background-image: url(../img/close.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .breadcrumbs {
+        font-size: 14px;
+    }
+
+    .hero-title {
+        font-size: 79px;
+        color: #fff;
+    }
+
+    .hero-description {
+        font-size: 12px;
+        line-height: 167%;
+        color: #faf9f9;
+    }
+
+    .banner {
+        margin-top: 22px;
+    }
+
+    .banner-wrapper {
+        padding: 35px 17px;
+    }
+
+
+    .banner-description {
+        font-size: 14px;
+    }
 
 }
