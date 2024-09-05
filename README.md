@@ -4,8 +4,8 @@
 
 **Ссылки по проекту:**
 
-- [Макет Figma] (https://www.figma.com/design/tpIbHY0wAHAm1Kec1utMqD/Burgers-Menu-%2F-Contact-(Copy)?node-id=8101-197&t=DUltJX1jucRXvLDW-1)
-- [Демо] (https://glebbus89.github.io/FrontendBlok-Module01-Burger/)
+- [Макет Figma](<https://www.figma.com/design/tpIbHY0wAHAm1Kec1utMqD/Burgers-Menu-%2F-Contact-(Copy)?node-id=8101-197&t=DUltJX1jucRXvLDW-1>)
+- [Демо](https://glebbus89.github.io/FrontendBlok-Module01-Burger/)
 
 **Используемые технологии:**
 
